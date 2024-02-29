@@ -13,7 +13,7 @@ class MainTest {
 
     @org.junit.jupiter.api.Test
     void addTwo() {
-        assertEquals(24, Main.add(5,7,6,6));
+        assertEquals(24, Main.add(5));
     }
 
     @org.junit.jupiter.api.Test
@@ -38,22 +38,22 @@ class MainTest {
 
     @org.junit.jupiter.api.Test
     void roundPositiveValueToNearestInteger() {
-        assertEquals(9, Main.roundPositiveValueToNearestInteger(8.5));
+        assertEquals(9, Main.roundPositiveValueToNearestInteger((int) 8.5));
     }
 
     @org.junit.jupiter.api.Test
     void roundPositiveValueToNearestIntegerTwo() {
-        assertEquals(8, Main.roundPositiveValueToNearestInteger(8.49));
+        assertEquals(8, Main.roundPositiveValueToNearestInteger((int) 8.49));
     }
 
     @org.junit.jupiter.api.Test
     void roundNegativeValueToNearestInteger() {
-        assertEquals(-8, Main.roundNegativeValueToNearestInteger(-8.49));
+        assertEquals(-8, Main.roundNegativeValueToNearestInteger((int) -8.49));
     }
 
     @org.junit.jupiter.api.Test
     void roundNegativeValueToNearestIntegerTwo() {
-        assertEquals(-9, Main.roundNegativeValueToNearestInteger(-8.5));
+        assertEquals(-9, Main.roundNegativeValueToNearestInteger((int) -8.5));
     }
 
 
